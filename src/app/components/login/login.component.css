@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;800&display=swap');
+
+body {
+  background: white;
+  font-family: 'Inter UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+.page {
+  background:url('https://i.pinimg.com/originals/3c/ab/43/3cab434622d9fabfde2f46e9a51380d6.gif');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: absolute;
+  place-content: center;
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .page {
+    background: linear-gradient(220deg,rgb(255, 100, 255),rgb(0, 0, 133),black);
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 320px;
+  margin: 0 auto;
+  width: 640px;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: linear-gradient(220deg,rgb(194, 194, 194),rgb(228, 228, 228),rgb(190, 190, 190));
+  height: calc(100% - 40px);
+  font-family: 'Orbitron', sans-serif;
+  top: 20px;
+  position: relative;
+  width: 50%;
+}
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.login {
+  font-size: 40px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.right {
+  background: linear-gradient(220deg,rgb(255, 100, 255),rgb(0, 0, 133),black);
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  font-family: 'Orbitron', sans-serif;
+  color: #F1F1F2;
+  position: relative;
+  width: 50%;
+}
+
+
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+.form {
+  margin: 40px;
+  position: absolute;
+}
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 14px;
+  height: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+input {
+  background: transparent;
+  border: 0;
+  color: #f2f2f2;
+  font-size: 13px;
+  height: 35px;
+  line-height: 30px;
+  outline: none !important;
+  width: 100%;
+  border-width : 100px;
+}
+#submit {
+  color: white;
+  margin-top: 40px;
+}

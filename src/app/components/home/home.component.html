@@ -1,0 +1,19 @@
+<div class="home">
+    <nav>
+        <img src="../../../assets/logo.gif" class="logo">
+        <ul>
+            <li><a (click) = "show=true" routerLink = "/home" routerLinkActive = "active">Home</a></li>
+            <li><a (click) = "show=false" routerLink = "quiensoy" routerLinkActive = "active">Quien soy</a></li>
+            <li><a routerLink="/" routerLinkActive = "active">Cerrar Sesion</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+    <div *ngIf="show">
+        <h1>{{mensaje}}</h1>
+    </div>
+
+</div>
+
